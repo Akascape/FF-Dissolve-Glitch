@@ -1,7 +1,7 @@
 # FF-Dissolve-Glitch
 This is a GUI based glitch tool that uses [FFmpeg](https://ffmpeg.org/) to create awesome and wierd motion interpolated glitches in your videos. I call it FF dissolve glitch because it creates kinda dissolving type errors. I made this for those who don't like to use command line everytime and yes, its free and open source!
 # Download
-[<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/Akascape/FF-Dissolve-Glitch?display_name=release&label=Windows&logo=Windows&logoColor=019df4&style=for-the-badge" width="300">](https://github.com/Akascape/FF-Dissolve-Glitch/releases/download/FF-Dissolve-Glitch/FF-Dissolve-Glitch_win64.zip)
+[<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/Akascape/FF-Dissolve-Glitch-v0.1?display_name=release&label=Windows&logo=Windows&logoColor=019df4&style=for-the-badge" width="300">](https://github.com/Akascape/FF-Dissolve-Glitch/releases/download/FF-Dissolve-Glitch/FF-Dissolve-Glitch_win64.zip)
 ## How to Install?
 - For windows users, just extract the downloaded zip file and run FF dissolve glitch.exe to use it. (FFMPEG included)
 - For Python users, simply run FF dissolve glitch.py and please make sure you have [FFmpeg](https://ffmpeg.org/download.html) installed or else it will not open. If its not even working after downloading ffmpeg then you can either copy the ffmpeg file to the same script folder or specify the full path of ffmpeg inside the python script (line 16).
