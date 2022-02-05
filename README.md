@@ -1,1 +1,17 @@
 # FF-Dissolve-Glitch
+This is a GUI glitch tool that uses [FFmpeg](https://ffmpeg.org/) to create awesome and wierd motion interpolated glitched in your video. I call it FF dissolve glitch because it creates kinda dissolving type glitched in videos. Its free and open source!
+# Download
+## How to Install?
+- For windows users, just extract the downloaded zip file and run FF dissolve glitch.exe to use it. (FFMPEG included)
+- For Python users, simply run FF dissolve glitch.py and please make sure you have FFmpeg installed or else it will not open. If its not even working after downloading then you can either copy the ffmpeg file to the same folder or specify the full path of ffmpeg inside the python script (line 16).
+## How to use?
+- Click the OPEN button and choose your video file
+- Then choose the desired modes and parameters
+- Then simply click the GLITCH button and wait for the video to get baked
+- After baking, you can view the video which will be saved in the same directory
+<br>You can try experimenting with all the modes and see the results!
+## UI
+![UI](https://user-images.githubusercontent.com/89206401/152640208-007b03f1-4945-4ebf-9398-8c0c3332dfc8.png)
+### More Info
+This project is possible because of Antonio Roberts's guide on [motion-interpolation-glitch-using-ffmpeg](https://www.hellocatfood.com/motion-interpolation-for-glitch-aesthetics-using-ffmpeg-part-0/), so a big thanks to Antonio. You can see his full guide where he described all the combinations of modes with video examples.
+
