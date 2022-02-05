@@ -1,5 +1,5 @@
 # FF-Dissolve-Glitch
-This is a GUI glitch tool that uses [FFmpeg](https://ffmpeg.org/) to create awesome and wierd motion interpolated glitched in your video. I call it FF dissolve glitch because it creates kinda dissolving type glitched in videos. Its free and open source!
+This is a GUI based glitch tool that uses [FFmpeg](https://ffmpeg.org/) to create awesome and wierd motion interpolated glitches in your videos. I call it FF dissolve glitch because it creates kinda dissolving type errors in videos. Its free and open source!
 # Download
 ## How to Install?
 - For windows users, just extract the downloaded zip file and run FF dissolve glitch.exe to use it. (FFMPEG included)
