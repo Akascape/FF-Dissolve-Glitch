@@ -12,7 +12,7 @@ Don't forget to give a ⭐ :)
 - Then choose the desired modes and parameters
 - Then simply click the GLITCH button and wait for the video to get baked
 - After baking, you can view the video which will be saved in the same directory
-Note: Press q in the command shell if you want to safely end the ffmpeg process while running the program.
+<br>Note: Press q in the command shell if you want to safely end the ffmpeg process while running the program.
 <br>You can try experimenting with all the modes and see the results!
 ## UI
 ![UI](https://user-images.githubusercontent.com/89206401/152640208-007b03f1-4945-4ebf-9398-8c0c3332dfc8.png)
