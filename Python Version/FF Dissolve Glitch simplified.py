@@ -1,3 +1,4 @@
+#This version is targeted for non-windows systems.
 import tkinter
 from tkinter import *
 from tkinter import Tk, Button, Label, ttk, messagebox, filedialog
