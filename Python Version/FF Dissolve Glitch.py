@@ -76,12 +76,12 @@ def Enabled():
     Log.place_forget()
     root.update_idletasks()
     Vdo['state']=NORMAL
-    modebox['state']=NORMAL
-    exportbox['state']=NORMAL
+    modebox['state']="readonly"
+    exportbox['state']="readonly"
     fpsbox['state']=NORMAL
-    mebox['state']=NORMAL
+    mebox['state']="readonly"
     spedbox['state']=NORMAL
-    mcbox['state']=NORMAL
+    mcbox['state']="readonly"
     btn['state']=NORMAL
 def info():
     messagebox.showinfo("Help",
