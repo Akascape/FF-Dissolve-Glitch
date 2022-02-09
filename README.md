@@ -19,3 +19,4 @@ Don't forget to give a ⭐ :)
 ![UI](https://user-images.githubusercontent.com/89206401/152640208-007b03f1-4945-4ebf-9398-8c0c3332dfc8.png)
 ### More Info
 This project is possible because of Antonio Roberts's guide on [motion-interpolation-glitch-using-ffmpeg](https://www.hellocatfood.com/motion-interpolation-for-glitch-aesthetics-using-ffmpeg-part-0/), so a big thanks to Antonio. You can see his full guide where he described all the combinations of modes with video examples.
+<br>Follow me : [`Akascape`](https://github.com/Akascape)
