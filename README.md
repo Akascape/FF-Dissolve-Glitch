@@ -21,7 +21,13 @@ Don't forget to give a ⭐ :)
 | Original | Glitched |
 |:--------:|:--------:|
 |![Untitled_converted_converted](https://user-images.githubusercontent.com/89206401/166420228-ceb0391d-d02b-4d80-a03b-e5703e5eb814.gif)|![Untitled_dissolve_glitched_BILAT_UMH_AOBMC_converted](https://user-images.githubusercontent.com/89206401/166420254-15ef2d79-5ceb-4f25-af30-e25d9022e472.gif)|
+## License
+
+[<img src="https://user-images.githubusercontent.com/89206401/168461242-884f25ce-eb67-406a-9d98-cf8d0f28cb43.png" width=100>](https://github.com/Akascape/Datamosher-Pro/blob/Datamosher-Pro-v1.7/LICENSE)
+
+Note that FFmpeg does not fall in this license, it is an indpendent program itself and no modification is done with its code. When distributing an application with this package, it must be taken into account that multiple licenses are involved. Refer [FFmpeg](https://ffmpeg.org/legal.html) License Page for more details. 
 ### More Info
 This project is possible because of Antonio Roberts's guide on [motion-interpolation-glitch-using-ffmpeg](https://www.hellocatfood.com/motion-interpolation-for-glitch-aesthetics-using-ffmpeg-part-0/), so a big thanks to Antonio. You can see his full guide where he described all the combinations of modes with video examples.
 <br>Follow me : [`Akascape`](https://github.com/Akascape)
 <br>I have also created some more glitch tools for [Datamoshing](https://github.com/Akascape/Datamosher-Pro) and [Ascii art](https://github.com/Akascape/Ascify-Art), so go and check them out!
+
