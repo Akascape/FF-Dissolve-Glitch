@@ -12,6 +12,7 @@ def resource_path0(relative_path):
         os.path.dirname(os.path.abspath(__file__)))
     return os.path.join(base_path, relative_path)
 global resource
+font_name="cambria" #change the font if you are facing some UI issues
 resource="ffmpeg"
 subprocess.call(f'"{resource}" -version', shell=True) #check ffmpeg
 def openfile():
@@ -101,49 +102,49 @@ except:
 	pass
 root.geometry("400x300")
 root.configure(bg='#FFFFFF')
-Label(root, text="FF DISSOLVE GLITCH", font=("",17),bd=1, fg="#f86604", bg="#FFFFFF").grid()
-flabel=Label(root, text="Choose Video", font=("",8), fg="#f86604", bg="#FFFFFF")
+Label(root, text="FF DISSOLVE GLITCH", font=(font_name,17),bd=1, fg="#f86604", bg="#FFFFFF").grid()
+flabel=Label(root, text="Choose Video", font=(font_name,8), fg="#f86604", bg="#FFFFFF")
 flabel.grid()
 Vdo=Button(root, width=42,bg="#82CC6C",fg="white",highlightthickness=1,borderwidth=0.2,text="OPEN",relief="groove", command=openfile)
 Vdo.grid()
-Label(root, text="Choose Mode", font=("",9), bg="#FFFFFF").place(x=40,y=85)
-Label(root, text="Choose Type", font=("",9), bg="#FFFFFF").place(x=160,y=85)
-Label(root, text="Slow Speed", font=("",9), bg="#FFFFFF").place(x=275,y=130)
-Label(root, text="Choose FPS", font=("",9), bg="#FFFFFF").place(x=45,y=130)
-Label(root, text="Export Format", font=("",9), bg="#FFFFFF").place(x=155,y=130)
-Label(root, text="MC Mode", font=("",9), bg="#FFFFFF").place(x=280,y=85)
+Label(root, text="Choose Mode", font=(font_name,9), bg="#FFFFFF").place(x=40,y=85)
+Label(root, text="Choose Type", font=(font_name,9), bg="#FFFFFF").place(x=160,y=85)
+Label(root, text="Slow Speed", font=(font_name,9), bg="#FFFFFF").place(x=275,y=130)
+Label(root, text="Choose FPS", font=(font_name,9), bg="#FFFFFF").place(x=45,y=130)
+Label(root, text="Export Format", font=(font_name,9), bg="#FFFFFF").place(x=155,y=130)
+Label(root, text="MC Mode", font=(font_name,9), bg="#FFFFFF").place(x=280,y=85)
 modes=["BILAT","BIDIR"]
-modebox=ttk.Combobox(root,values=modes, font=("",10) , width=8, state="readonly")
+modebox=ttk.Combobox(root,values=modes, font=(font_name,10) , width=8, state="readonly")
 modebox.current(0)
 modebox.place(x=40,y=105)
 me=["TSS","ESA","TDLS","NTSS","FSS","DS","HEXBS","EPZS","UMH"]
-mebox=ttk.Combobox(root,values=sorted(me), font=("",10) , width=8, state="readonly")
+mebox=ttk.Combobox(root,values=sorted(me), font=(font_name,10) , width=8, state="readonly")
 mebox.current(7)
 mebox.place(x=160,y=105)
 speed=["0.5","1","2","10","20","50"]
-spedbox=ttk.Combobox(root,values=speed, font=("",10) , width=8)
+spedbox=ttk.Combobox(root,values=speed, font=(font_name,10) , width=8)
 spedbox.current(1)
 spedbox.place(x=270,y=150)
 fps=["25", "30", "60"]
-fpsbox=ttk.Combobox(root,values=fps, font=("",10) , width=8)
+fpsbox=ttk.Combobox(root,values=fps, font=(font_name,10) , width=8)
 fpsbox.current(0)
 fpsbox.place(x=40,y=150)
 export=["mp4","avi","mov","mkv","wmv"]
-exportbox=ttk.Combobox(root,values=export, font=("",10) , width=8, state="readonly")
+exportbox=ttk.Combobox(root,values=export, font=(font_name,10) , width=8, state="readonly")
 exportbox.current(0)
 exportbox.place(x=160,y=150)
 mc=["AOBMC","OBMC"]
-mcbox=ttk.Combobox(root,values=mc, font=("",10) , width=8, state="readonly")
+mcbox=ttk.Combobox(root,values=mc, font=(font_name,10) , width=8, state="readonly")
 mcbox.current(0)
 mcbox.place(x=270,y=105)
-btn=Button(width=25, height=2,text="GLITCH",font=("",10) ,bg="#f86604",fg="#FFFFFF",borderwidth=0,highlightthickness=2,padx=0,pady=0,command=prestep)
+btn=Button(width=25, height=2,text="GLITCH",font=(font_name,10) ,bg="#f86604",fg="#FFFFFF",borderwidth=0,highlightthickness=2,padx=0,pady=0,command=prestep)
 btn.place(x=108,y=180)
-Log=Label(root,text="", font=("",10) , bg="#FFFFFF")
-infobtn= Button(root, width=2,bg="#FFFFFF",fg="black", text="ⓘ",font=(10),relief="sunken",cursor='hand2', highlightthickness=0,borderwidth=0,padx=0,pady=0,command=info)
+Log=Label(root,text="", font=(font_name,10) , bg="#FFFFFF")
+infobtn= Button(root, width=2,bg="#FFFFFF",fg="black", text="ⓘ",relief="sunken",cursor='hand2', highlightthickness=0,borderwidth=0,padx=0,pady=0,command=info)
 infobtn.place(x=377,y=275)
-dev=Label(root, text='Developed by Akascape | ',bg='#FFFFFF',fg="#6D76CD", font=("",10) )
+dev=Label(root, text='Developed by Akascape | ',bg='#FFFFFF',fg="#6D76CD", font=(font_name,10) )
 dev.place(x=5,y=280)
-link=Label(root, text="Github Link",font=("",10) ,bg='#FFFFFF',fg="#6D76CD", cursor="hand2")
+link=Label(root, text="Github Link",font=(font_name,10) ,bg='#FFFFFF',fg="#6D76CD", cursor="hand2")
 link.place(x=175,y=280)
 link.bind("<Button-1>", lambda e:
 callback("https://github.com/Akascape/FF-Dissolve-Glitch"))
