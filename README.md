@@ -6,8 +6,7 @@ This is a free GUI based glitch tool that uses [FFmpeg](https://ffmpeg.org/) to 
 Don't forget to give a ⭐ :)
 ## How to Install?
 - For windows users, just extract the downloaded zip file and run FF dissolve glitch.exe to use it. (FFMPEG included)
-- For Python users (windows), simply run FF_dissolve_glitch.py and please make sure you have [FFmpeg](https://ffmpeg.org/download.html) installed or else it will not open. If its not even working after downloading ffmpeg then you can either copy the ffmpeg file to the same script folder or specify the full path of ffmpeg inside the python script (line 16).
-- For non-windows python users, simply download the FF_dissolve_glitch_simplified.py and run it.
+- For Python users (windows and linux only), simply run "FF dissolve glitch.py" and please make sure you have [FFmpeg](https://ffmpeg.org/download.html) installed or else it will not work.
 ## How to use?
 - Click the OPEN button and choose your video file
 - Then choose the desired modes and parameters
