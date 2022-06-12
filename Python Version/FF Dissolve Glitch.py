@@ -14,7 +14,7 @@ def resource_path0(relative_path):
 global resource
 try:
     resource="ffmpeg" #ffmpeg path
-    subprocess.Popen(f'"{resource}" -version') #check ffmpeg
+    subprocess.Popen(f'"{resource}" -version', shell=True) #check ffmpeg
 except:
     messagebox.showerror("No FFMPEG found!","Please download ffmpeg!")
     sys.exit()
@@ -59,7 +59,7 @@ def Convert(outfile):
     m=(mebox.get()).lower()
     sp=float(spedbox.get())
     mc=(mcbox.get()).lower()
-    subprocess.call(f'"{resource}" -i "{file}" -filter:v setpts="{sp}"*PTS,minterpolate="fps="{fp}":mb_size=16:search_param=400:vsbmc=0:scd=none:mc_mode="{mc}":me_mode="{mod}":me="{m}"" "{outfile}"')
+    subprocess.call(f'"{resource}" -i "{file}" -filter:v setpts="{sp}"*PTS,minterpolate="fps="{fp}":mb_size=16:search_param=400:vsbmc=0:scd=none:mc_mode="{mc}":me_mode="{mod}":me="{m}"" "{outfile}"', shell=True)
     Log.place_forget()
     root.update_idletasks()
     messagebox.showinfo("Done!","Your video is baked!")
