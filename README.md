@@ -1,5 +1,5 @@
 # FF Dissolve Glitch
-This is a free GUI based glitch tool that uses [FFmpeg](https://ffmpeg.org/) to create awesome and wierd motion interpolated glitches in videos. I call it FF dissolve glitch because it creates kinda dissolving pixel type effect. I made this for those who don't like to use command line everytime and yes, its free and open source!
+This is a free GUI based glitch tool that uses [FFmpeg](https://ffmpeg.org/) to create awesome and wierd motion interpolated glitches in videos. I call it FF dissolve glitch because it creates kinda dissolving pixel type effect. I made this for those who don't like to use command line everytime and yes, its free and open source python script!
 # Download
 ### [<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Akascape/FF-Dissolve-Glitch?color=9508e2&label=Source%20Code&logo=Python&logoColor=yellow&style=for-the-badge"  width="250">](https://github.com/Akascape/FF-Dissolve-Glitch/archive/refs/heads/main.zip)
 Don't forget to give a ⭐ :)
