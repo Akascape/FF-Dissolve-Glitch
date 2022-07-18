@@ -1,12 +1,10 @@
 # FF Dissolve Glitch
 This is a free GUI based glitch tool that uses [FFmpeg](https://ffmpeg.org/) to create awesome and wierd motion interpolated glitches in videos. I call it FF dissolve glitch because it creates kinda dissolving pixel type effect. I made this for those who don't like to use command line everytime and yes, its free and open source!
 # Download
-### [<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/Akascape/FF-Dissolve-Glitch?display_name=release&label=Windows&logo=Windows&logoColor=019df4&style=for-the-badge" width="400">](https://github.com/Akascape/FF-Dissolve-Glitch/releases/download/FF-Dissolve-Glitch/FF-Dissolve-Glitch_win64.zip)
 ### [<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Akascape/FF-Dissolve-Glitch?color=9508e2&label=Source%20Code&logo=Python&logoColor=yellow&style=for-the-badge"  width="250">](https://github.com/Akascape/FF-Dissolve-Glitch/archive/refs/heads/main.zip)
 Don't forget to give a ⭐ :)
 ## How to Install?
-- For windows users, just extract the downloaded zip file and run FF dissolve glitch.exe to use it. (FFMPEG included)
-- For Python users, simply run "FF dissolve glitch.py" and please make sure you have [FFmpeg](https://ffmpeg.org/download.html) installed or else it will not work.
+- simply run "FF dissolve glitch.py" and please make sure you have [FFmpeg](https://ffmpeg.org/download.html) installed or else it will not work.
 ## How to use?
 - Click the OPEN button and choose your video file (short videos are recommended)
 - Then choose the desired modes and parameters
@@ -23,8 +21,7 @@ Don't forget to give a ⭐ :)
 ## License
 
 [<img src="https://user-images.githubusercontent.com/89206401/168461242-884f25ce-eb67-406a-9d98-cf8d0f28cb43.png" width=100>](https://github.com/Akascape/FF-Dissolve-Glitch/blob/main/LICENSE)
-
-Note that FFmpeg does not fall in this license, it is an independent program itself and no modification is done with its code/library. When distributing an application with this package, it must be taken into account that multiple licenses are involved. Refer [FFmpeg](https://ffmpeg.org/legal.html) License Page for more details. 
+ 
 ### More Info
 This project is possible because of Antonio Roberts's guide on [motion-interpolation-glitch-using-ffmpeg](https://www.hellocatfood.com/motion-interpolation-for-glitch-aesthetics-using-ffmpeg-part-0/), so a big thanks to Antonio. You can see his full guide where he described all the combinations of modes with video examples.
 <br>Follow me : [`Akascape`](https://github.com/Akascape)
