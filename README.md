@@ -8,7 +8,7 @@ Don't forget to give a ⭐ :)
   - [customtkinter](https://pypi.org/project/customtkinter/)
   - [tkdial](https://pypi.org/project/tkdial/)
   - [pillow](https://pypi.org/project/Pillow/)
-- Download [FFmpeg](https://ffmpeg.org/download.html) properly and set it's path to environment.
+- Download [FFmpeg](https://ffmpeg.org/download.html) properly and set its path to environment.
 - Then, simply run `FF-dissolve Glitch.py`
 ## How to use?
 - Click the OPEN button and choose your video file **(short videos are recommended)**
