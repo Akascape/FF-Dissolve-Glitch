@@ -123,6 +123,7 @@ app.minsize(450,600)
 app.bind("<1>", lambda event: event.widget.focus_set())
 
 try:
+    app.wm_iconbitmap()
     icopath = ImageTk.PhotoImage(Image.open("Assets//Programicon.png"))
     app.iconphoto(False, icopath)
 except:
