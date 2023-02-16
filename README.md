@@ -9,7 +9,7 @@ Don't forget to give a ⭐ :)
   - [tkdial](https://pypi.org/project/tkdial/)
   - [pillow](https://pypi.org/project/Pillow/)
 - Download [FFmpeg](https://ffmpeg.org/download.html) properly and set its path to environment.
-- Then, simply run `FF-dissolve Glitch.py`
+- Then, simply run `ff-dissolve-glitch.py`
 ## How to use?
 - Click the OPEN button and choose your video file **(short videos are recommended)**
 - Choose the desired modes and parameters
