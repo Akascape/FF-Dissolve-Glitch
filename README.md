@@ -11,12 +11,12 @@ Don't forget to give a ⭐ :)
 - Download [FFmpeg](https://ffmpeg.org/download.html) properly and set its path to environment.
 - Then, simply run `ff-dissolve-glitch.py`
 ## How to use?
-- Click the OPEN button and choose your video file **(short videos are recommended)**
+- Click the `OPEN` button and choose your video file **(short videos are recommended)**
 - Choose the desired modes and parameters
 - Then simply click the **export** button and wait for the video to get baked. **(Conversions will be very slow)**
 - After baking, you can view the video and see the results.
-<br>Note: Press 'q' in the command shell if you want to safely end any ffmpeg process.
-<br>You can try experimenting with all the modes but some modes **may not give any result)**
+<br>**Note: Press `q` in the command shell if you want to safely end any ffmpeg process.**
+<br>(You can try experimenting with all the modes but some modes **may not give any result)**
 
 More information about motion interpolation modes are given here- [ffmpeg-filters: interpolate](http://ffmpeg.org/ffmpeg-filters.html#minterpolate)
 
