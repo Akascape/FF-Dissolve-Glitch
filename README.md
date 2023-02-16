@@ -18,7 +18,7 @@ Don't forget to give a ⭐ :)
 <br>**Note: Press `q` in the command shell if you want to safely end any ffmpeg process.**
 <br>(You can try experimenting with all the modes but some modes **may not give any result)**
 
-More information about motion interpolation modes are given here- [ffmpeg-filters: interpolate](http://ffmpeg.org/ffmpeg-filters.html#minterpolate)
+More information about motion interpolation modes are given here: [ffmpeg-filters: interpolate](http://ffmpeg.org/ffmpeg-filters.html#minterpolate)
 
 ## UI
 ![Screenshot](https://user-images.githubusercontent.com/89206401/206907828-3775c4b6-ab6f-4168-83d9-d2bfb1dbea24.jpg)
@@ -32,8 +32,8 @@ More information about motion interpolation modes are given here- [ffmpeg-filter
 [<img src="https://user-images.githubusercontent.com/89206401/168461242-884f25ce-eb67-406a-9d98-cf8d0f28cb43.png" width=100>](https://github.com/Akascape/FF-Dissolve-Glitch/blob/main/LICENSE)
  
 ### More Info
-This project is possible because of Antonio Roberts's guide on [motion-interpolation-glitch-using-ffmpeg](https://www.hellocatfood.com/motion-interpolation-for-glitch-aesthetics-using-ffmpeg-part-0/), so a big thanks to Antonio. You can see his full guide where he described all the combinations of modes with video examples.
+This project is possible because of [Antonio Roberts](https://github.com/hellocatfood)'s guide on [motion-interpolation-glitch-using-ffmpeg](https://www.hellocatfood.com/motion-interpolation-for-glitch-aesthetics-using-ffmpeg-part-0/), so a big thanks to Antonio. You can see his full guide where he described all the combinations of modes with video examples.
 <br>Follow me : [`Akascape`](https://github.com/Akascape)
-<br>I have also created some glitch tools for [Datamoshing](https://github.com/Akascape/Datamosher-Pro), [Ascii art](https://github.com/Akascape/Ascify-Art), [Image glitching](https://github.com/Akascape/Pure-Glitch) and [more](https://github.com/Akascape?tab=repositories), so go and check them out!
+<br>I have also created some glitch tools for [datamoshing](https://github.com/Akascape/Datamosher-Pro), [ascii art](https://github.com/Akascape/Ascify-Art), [image glitching](https://github.com/Akascape/Pure-Glitch) and [more](https://github.com/Akascape?tab=repositories), so go and check them out!
 
 ## Thanks for visiting!
