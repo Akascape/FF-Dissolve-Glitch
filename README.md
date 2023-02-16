@@ -33,7 +33,7 @@ More information about motion interpolation modes are given here: [ffmpeg-filter
  
 ### More Info
 This project is possible because of [Antonio Roberts](https://github.com/hellocatfood)'s guide on [motion-interpolation-glitch-using-ffmpeg](https://www.hellocatfood.com/motion-interpolation-for-glitch-aesthetics-using-ffmpeg-part-0/), so a big thanks to Antonio. You can see his full guide where he described all the combinations of modes with video examples.
-<br>Follow me : [`Akascape`](https://github.com/Akascape)
+<br>**Follow me :** [`Akascape`](https://github.com/Akascape)
 <br>I have also created some glitch tools for [datamoshing](https://github.com/Akascape/Datamosher-Pro), [ascii art](https://github.com/Akascape/Ascify-Art), [image glitching](https://github.com/Akascape/Pure-Glitch) and [more](https://github.com/Akascape?tab=repositories), so go and check them out!
 
 ## Thanks for visiting!
