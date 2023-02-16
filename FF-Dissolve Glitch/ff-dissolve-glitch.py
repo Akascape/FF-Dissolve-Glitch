@@ -96,7 +96,8 @@ def conversion():
     sp = str(round(speed_slider.get(),1))
     mc = str((mc_box.get()).lower())
     export_button.configure(state="disabled")
-    subprocess.call(f'ffmpeg -i "{file}" -c:v libx264 -preset "{preset}" -s "{reso_box_x.get()}x{reso_box_y.get()}" -filter:v setpts="{sp}"*PTS,minterpolate="fps="{fp}":mb_size=16:search_param=400:vsbmc=0:scd=none:mc_mode="{mc}":me_mode="{mod}":me="{m}"" "{outfile}"')
+    cmd = f'ffmpeg -i "{file}" -c:v libx264 -preset "{preset}" -s "{reso_box_x.get()}x{reso_box_y.get()}" -filter:v setpts="{sp}"*PTS,minterpolate="fps="{fp}":mb_size=16:search_param=400:vsbmc=0:scd=none:mc_mode="{mc}":me_mode="{mod}":me="{m}"" "{outfile}"'
+    subprocess.call(cmd, shell=False)
 
     if os.path.exists(outfile):
         tkinter.messagebox.showinfo("DONE","Exported the file: "+outfile)
