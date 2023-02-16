@@ -47,6 +47,7 @@ def set_speed(value):
     label_5.configure(text="Speed: "+str(round(value,1))+"x Slower")
 
 def set_preset():
+    global preset
     if meter.get()<20:
         meter.configure(text="Slow")
         preset = "slow"
