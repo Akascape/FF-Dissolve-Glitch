@@ -86,7 +86,7 @@ def open_video():
 def conversion():
     if file=="":
         return
-    outfile = tkinter.filedialog.asksaveasfilename(initialfile="Untitled.mp4", filetypes=[('Video', ['*.mp4','*.avi','*.mov','*.mkv']),('All Files', '*.*')])
+    outfile = tkinter.filedialog.asksaveasfilename(initialfile="Untitled."+export_box.get(), filetypes=[('Video', ['*.mp4','*.avi','*.mov','*.mkv']),('All Files', '*.*')])
     if not outfile:
         return
     
