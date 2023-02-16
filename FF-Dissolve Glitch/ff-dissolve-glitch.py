@@ -206,7 +206,7 @@ export_values = ["mp4","avi","mov","mkv","wmv"]
 export_box = customtkinter.CTkOptionMenu(master=frame_1, height=40, width=100, values=export_values)
 export_box.grid(row=14, sticky="we", pady=(0,10), padx=(200,20))
 
-preset = ""
+preset = "medium"
 
 meter = Meter(frame_1, bg=customtkinter.ThemeManager.theme["CTkFrame"]["fg_color"][o], radius=150, start=0, end=100, border_width=5,
                fg="black", text_color="white", start_angle=270, end_angle=-360, text="", scale_color="black", axis_color="white",
