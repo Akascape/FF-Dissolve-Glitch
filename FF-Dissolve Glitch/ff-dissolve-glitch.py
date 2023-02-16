@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2022 Akash Bora
+Copyright (c) 2023 Akash Bora
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -68,15 +68,16 @@ def set_preset():
        
 def open_video():
     global file
-    file = tkinter.filedialog.askopenfilename(filetypes =[('MP4', '*.mp4'),('All Files', '*.*')])
-    if(len(file)>=1):
+    file = tkinter.filedialog.askopenfilename(filetypes=[('Video', ['*.mp4','*.avi','*.mov','*.mkv']),('All Files', '*.*')])
+    if file:
         open_button.configure(fg_color=customtkinter.ThemeManager.theme["CTkButton"]["hover_color"][o], text=file)
-        outpng = "Assets/thumbnail_cache/vid_thumbnail.jpg"
-        if os.path.exists("Assets/thumbnail_cache/vid_thumbnail.jpg"):
-                os.remove("Assets/thumbnail_cache/vid_thumbnail.jpg")
+        outpng = os.path.join(DIRPATH,"Assets","thumbnail_cache","vid_thumbnail.jpg")
+        if os.path.exists(os.path.join(DIRPATH,"Assets","thumbnail_cache","vid_thumbnail.jpg")):
+                os.remove(os.path.join(DIRPATH,"Assets","thumbnail_cache","vid_thumbnail.jpg"))
         subprocess.call(f'ffmpeg -loglevel quiet -ss 00:00:01 -t 00:00:01 -i "{file}" -qscale:v 2 -r 10.0 "{outpng}"', shell=True)
-        vid_image2 = customtkinter.CTkImage(Image.open(outpng), size=(300,150))
-        video_frame.configure(image=vid_image2, text="")
+        if os.path.exists(os.path.join(DIRPATH,"Assets","thumbnail_cache","vid_thumbnail.jpg")):
+            vid_image2 = customtkinter.CTkImage(Image.open(outpng), size=(300,150))
+            video_frame.configure(image=vid_image2, text="")
     else:
         open_button.configure(fg_color=customtkinter.ThemeManager.theme["CTkButton"]["fg_color"][o], text="OPEN VIDEO")
         video_frame.configure(image=icon, text="FF-DISSOLVE GLITCH")
@@ -84,11 +85,10 @@ def open_video():
 def conversion():
     if file=="":
         return
-    outfile = tkinter.filedialog.asksaveasfilename(filetypes =[('All Files', '*.*')])
+    outfile = tkinter.filedialog.asksaveasfilename(initialfile="Untitled.mp4", filetypes=[('Video', ['*.mp4','*.avi','*.mov','*.mkv']),('All Files', '*.*')])
     if not outfile:
         return
     
-    outfile = outfile+"."+export_box.get()
     fp = str(int(fps_slider.get()))
     mod = str((mode_box.get()).lower())
     m = str((type_box.get()).lower())
@@ -96,11 +96,15 @@ def conversion():
     mc = str((mc_box.get()).lower())
     export_button.configure(state="disabled")
     subprocess.call(f'ffmpeg -i "{file}" -c:v libx264 -preset "{preset}" -s "{reso_box_x.get()}x{reso_box_y.get()}" -filter:v setpts="{sp}"*PTS,minterpolate="fps="{fp}":mb_size=16:search_param=400:vsbmc=0:scd=none:mc_mode="{mc}":me_mode="{mod}":me="{m}"" "{outfile}"')
-    tkinter.messagebox.showinfo("DONE","Exported the file: "+outfile)
+
+    if os.path.exists(outfile):
+        tkinter.messagebox.showinfo("DONE","Exported the file: "+outfile)
+    else:
+        tkinter.messagebox.showinfo("ERROR","Something went wrong!")
     export_button.configure(state="normal")
 
 def info():
-    tkinter.messagebox.showinfo("Help",
+    tkinter.messagebox.showinfo("About",
     "This program make some weird but cool dissolving glitch with FFmpeg. \nHow To Use?"
     "\n➤ Click the OPEN button and choose your video file"
     "\n➤ Then choose the desired modes and parameters"
@@ -108,14 +112,15 @@ def info():
     "\n➤ After baking, you can view the video and see the results"
     "\nNote: You can press 'q' on your keyboard to end any ffmpeg process safely"
     "\n\nDeveloper: Akash Bora (a.k.a. Akascape)\nIf you have any issue then contact me on Github."
-    "\nVersion-0.3")
+    "\nVersion-0.4")
     
-if not os.path.exists("Assets//thumbnail_cache"):
-    os.mkdir("Assets//thumbnail_cache")
-
 HEIGHT = 800
 WIDTH = 500
-     
+DIRPATH = os.path.dirname(os.path.realpath(__file__))
+
+if not os.path.exists(os.path.join(DIRPATH,"Assets","thumbnail_cache")):
+    os.mkdir(os.path.join(DIRPATH,"Assets","thumbnail_cache"))
+               
 app = customtkinter.CTk()
 app.title("FF Dissolve Glitch")
 app.geometry((f"{WIDTH}x{HEIGHT}"))
@@ -124,7 +129,7 @@ app.bind("<1>", lambda event: event.widget.focus_set())
 
 try:
     app.wm_iconbitmap()
-    icopath = ImageTk.PhotoImage(Image.open("Assets//Programicon.png"))
+    icopath = ImageTk.PhotoImage(Image.open(os.path.join(DIRPATH,"Assets","Programicon.png")))
     app.iconphoto(False, icopath)
 except:
     pass
@@ -138,9 +143,10 @@ frame_1.grid(padx=20, pady=20, sticky="nswe")
 frame_1.grid_columnconfigure(0, weight=1)
 frame_1.grid_rowconfigure(0, weight=1)
 
-icon = customtkinter.CTkImage(Image.open("Assets//Programicon.png"), size=(150,150))
+icon = customtkinter.CTkImage(Image.open(os.path.join(DIRPATH,"Assets","Programicon.png")), size=(150,150))
 
-video_frame = customtkinter.CTkLabel(master=frame_1, image=icon, height=200, font=customtkinter.CTkFont("",30),text="FF-DISSOLVE GLITCH", fg_color=customtkinter.ThemeManager.theme["CTkFrame"]["top_fg_color"][o])
+video_frame = customtkinter.CTkLabel(master=frame_1, image=icon, height=200, font=customtkinter.CTkFont("",30),text="FF-DISSOLVE GLITCH",
+                                     fg_color=customtkinter.ThemeManager.theme["CTkFrame"]["top_fg_color"][o])
 video_frame.grid(row=0, rowspan=2, sticky="nswe", padx=10, pady=10)
 
 open_button = customtkinter.CTkButton(master=frame_1, text="OPEN VIDEO", height=40, command=open_video)
@@ -175,7 +181,7 @@ fps_slider.set(30)
 fps_slider.grid(sticky="we", pady=0, padx=10)
 
 label_5 = customtkinter.CTkLabel(master=frame_1, text="Speed: 1x Slower")
-label_5.grid(row=11,pady=0)
+label_5.grid(row=11, pady=0)
 
 speed_slider = customtkinter.CTkSlider(master=frame_1, from_=0.1, to=50, command=set_speed)
 speed_slider.set(1)
@@ -220,5 +226,4 @@ i_button = customtkinter.CTkButton(master=frame_1, text="i", fg_color=customtkin
                                    corner_radius=0, width=20, command=info)
 i_button.grid(row=0, sticky="ne", padx=10, pady=10)
 
-app.mainloop()
-                    
+app.mainloop()                   
